@@ -1,6 +1,6 @@
 # Dodo Payments Next.js Boilerplate
 
-A minimal, production-ready boilerplate for integrating [Dodo Payments](https://dodopayments.com/) with [Next.js](https://nextjs.org/) using the App Router.
+A minimal Nextjs boilerplate for integrating [Dodo Payments](https://dodopayments.com/) into your [Next.js](https://nextjs.org/) application.
 
 ## Features
 
@@ -11,6 +11,13 @@ A minimal, production-ready boilerplate for integrating [Dodo Payments](https://
 - **Customer Portal** - One-click subscription management
 - **TypeScript** - Fully typed with minimal, focused types
 - **Pre-filled Checkout** - Demonstrates passing customer data to improve UX
+
+## Prerequisites
+
+Before you begin, make sure you have:
+
+- **Node.js 20.9+** (required for Next.js 16)
+- **Dodo Payments account** (to access API and Webhook Keys from dashboard)
 
 ## Quick Start
 
@@ -151,6 +158,8 @@ onSubscriptionActive: async (payload) => {
 
 Add more webhook events as needed.
 
+For local development, you can use tools like [ngrok](https://ngrok.com/) to create a secure tunnel to your local server and use it as your webhook URL. Remember to update your `.env` file with the correct webhook verification key.
+
 ## Deployment
 
 ### Build for Production
@@ -185,7 +194,3 @@ https://example.com/api/webhook
 Need help? Reach out:
 - [Dodo Payments Discord](https://discord.gg/bYqAp4ayYh)
 - [GitHub Issues](https://github.com/dodopayments/dodo-nextjs-minimal-boilerplate/issues)
-
----
-
-**Built with ❤️ for the Dodo Payments community**
